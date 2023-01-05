@@ -86,7 +86,7 @@ const handleSubmit = async (e) => {
   const messageDiv = document.getElementById(uniqueID);
   loader(messageDiv);
 
-  const response = await fetch('https://codegpt-eoq1.onrender.com', {
+  const response = await fetch('http://localhost:5000/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
